@@ -1,0 +1,126 @@
+{
+  "chats": [
+    {
+      "id": 1,
+      "user": "Alice",
+      "agent": "Agent Smith",
+      "lastMessageTimestamp": "2023-08-28T10:15:00",
+      "messages": [
+        {
+          "id": 1,
+          "role": "user",
+          "message": "Hola, tengo un problema con mi pedido.",
+          "timestamp": "2023-08-28T10:00:00"
+        },
+        {
+          "id": 2,
+          "role": "agent",
+          "message": "Hola Alice, ¿en qué puedo ayudarte con tu pedido?",
+          "timestamp": "2023-08-28T10:05:00"
+        },
+        {
+          "id": 3,
+          "role": "user",
+          "message": "Mi pedido aún no ha llegado y la fecha estimada ya pasó.",
+          "timestamp": "2023-08-28T10:10:00"
+        },
+        {
+          "id": 4,
+          "role": "agent",
+          "message": "Lamento la molestia, Alice. Voy a verificar el estado de tu pedido y te informaré enseguida.",
+          "timestamp": "2023-08-28T10:15:00"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "user": "Bob",
+      "agent": "Agent Johnson",
+      "lastMessageTimestamp": "2023-08-28T11:15:00",
+      "messages": [
+        {
+          "id": 1,
+          "role": "user",
+          "message": "Hola, tengo un problema con mi cuenta de facturación.",
+          "timestamp": "2023-08-28T11:00:00"
+        },
+        {
+          "id": 2,
+          "role": "agent",
+          "message": "Hola Bob, estaré encantado de ayudarte con tu problema de facturación. Por favor, dime más detalles.",
+          "timestamp": "2023-08-28T11:05:00"
+        },
+        {
+          "id": 3,
+          "role": "user",
+          "message": "He sido cobrado dos veces por el mismo servicio este mes.",
+          "timestamp": "2023-08-28T11:10:00"
+        },
+        {
+          "id": 4,
+          "role": "agent",
+          "message": "Lamento la confusión. Voy a investigar la duplicación de cargos en tu cuenta y tomaré medidas para solucionarlo.",
+          "timestamp": "2023-08-28T11:15:00"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "user": "Eva",
+      "agent": "Agent Brown",
+      "lastMessageTimestamp": "2023-08-28T12:30:00",
+      "messages": [
+        {
+          "id": 1,
+          "role": "user",
+          "message": "Hola, necesito ayuda con un producto defectuoso que compré.",
+          "timestamp": "2023-08-28T12:00:00"
+        },
+        {
+          "id": 2,
+          "role": "agent",
+          "message": "Hola Eva, lamento escuchar que tienes problemas con tu producto. Cuéntame más para que pueda ayudarte mejor.",
+          "timestamp": "2023-08-28T12:05:00"
+        },
+        {
+          "id": 3,
+          "role": "user",
+          "message": "El producto que recibí está roto. ¿Qué debo hacer?",
+          "timestamp": "2023-08-28T12:10:00"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "user": "Charlie",
+      "agent": "Agent Jackson",
+      "lastMessageTimestamp": "2023-08-28T14:20:00",
+      "messages": [
+        {
+          "id": 1,
+          "role": "user",
+          "message": "Hola, tengo una pregunta sobre la suscripción a su servicio.",
+          "timestamp": "2023-08-28T14:00:00"
+        },
+        {
+          "id": 2,
+          "role": "agent",
+          "message": "¡Hola Charlie! Estoy aquí para responder a todas tus preguntas sobre nuestra suscripción. Dispara.",
+          "timestamp": "2023-08-28T14:05:00"
+        },
+        {
+          "id": 3,
+          "role": "user",
+          "message": "Quisiera saber los detalles de los planes de suscripción mensual y anual.",
+          "timestamp": "2023-08-28T14:10:00"
+        },
+        {
+          "id": 4,
+          "role": "agent",
+          "message": "Claro, Charlie. Nuestra suscripción mensual cuesta $10 y la anual $100. Ambas ofrecen acceso completo a nuestros servicios.",
+          "timestamp": "2023-08-28T14:20:00"
+        }
+      ]
+    }
+  ]
+}
