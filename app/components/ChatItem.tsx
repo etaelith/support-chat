@@ -3,18 +3,15 @@ import {View, Text, TouchableOpacity, StyleSheet} from "react-native";
 import {useNavigate} from "react-router-native";
 
 import {Chat} from "../types";
+import {formatTimeAgo} from "../utils/times";
 interface Item {
   chat: Chat;
 }
 const ChatItem = ({chat}: Item) => {
   const {message, timestamp} = chat.messages.slice(-1)[0];
-  const formattedTime = new Date(timestamp).toLocaleString("es-ES", {
-    weekday: "short",
-    month: "short",
-    day: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-  });
+  const timeFormat = new Date(timestamp).getTime();
+  const formatTime = formatTimeAgo(timeFormat);
+
   const navigate = useNavigate();
   const handleNavigate = () => {
     navigate(`${chat.id}`);
@@ -26,7 +23,7 @@ const ChatItem = ({chat}: Item) => {
         <Text style={styles.chatName}> {chat.agent}</Text>
         <Text style={styles.lastMessage}>{message}</Text>
       </View>
-      <Text style={styles.timestamp}>{formattedTime}</Text>
+      <Text style={styles.timestamp}>{formatTime}</Text>
     </TouchableOpacity>
   );
 };

@@ -4,7 +4,7 @@
       "id": 1,
       "user": "Alice",
       "agent": "Agent Smith",
-      "lastMessageTimestamp": "2023-08-28T14:30:00",
+      "lastMessageTimestamp": "2023-08-30T11:40:00",
       "messages": [
         {
           "id": 1,
@@ -58,7 +58,7 @@
           "id": 9,
           "role": "user",
           "message": "Está bien, esperaré. ¡Gracias por mantenerme informada!",
-          "timestamp": "2023-08-28T14:40:00"
+          "timestamp": "2023-08-30T11:40:00"
         }
       ]
     }

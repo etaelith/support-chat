@@ -1,7 +1,7 @@
 import {ScrollView, Text, StyleSheet, SafeAreaView, View} from "react-native";
 import {useLocation} from "react-router-native";
 
-import chats from "../../chats.json";
+import chats from "../../utils/chats.json";
 import StyledTextInput from "../StyledTextInput";
 const Chat = () => {
   const router = useLocation();
