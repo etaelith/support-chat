@@ -1,6 +1,6 @@
-import {Link} from "react-router-native";
+import {Link, useLocation} from "react-router-native";
 import {Text, View} from "react-native";
-const AppBarTab = ({active, children, to}: {active: boolean; to: string; children: any}) => {
+const AppBarTab = ({children, to}: {to: string; children: any}) => {
   return (
     <Link to={to}>
       <Text>{children}</Text>
@@ -9,14 +9,15 @@ const AppBarTab = ({active, children, to}: {active: boolean; to: string; childre
 };
 
 const AppBar = () => {
+  const router = useLocation();
+
   return (
     <View>
-      <AppBarTab active to="/">
-        Home
-      </AppBarTab>
-      <AppBarTab active to="/signin">
-        SignIn
-      </AppBarTab>
+      {router.pathname === "/" ? (
+        <AppBarTab to="/signin">SignIn</AppBarTab>
+      ) : (
+        <AppBarTab to="/">Back</AppBarTab>
+      )}
     </View>
   );
 };
