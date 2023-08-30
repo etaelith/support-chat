@@ -21,3 +21,19 @@ export enum Role {
   Agent = "agent",
   User = "user",
 }
+
+// form
+
+export interface FormErrors {
+  email?: string;
+}
+
+export interface FormikInputValueProps {
+  name: string;
+  placeholder?: string;
+  secureTextEntry?: boolean;
+}
+export interface FormValues {
+  email: string;
+  password: string;
+}

@@ -4,8 +4,7 @@ import {View, FlatList} from "react-native";
 import {Chat} from "../../types";
 import chats from "../../chats.json";
 import Search from "../Search";
-
-import ChatItem from "./ChatItem";
+import ChatItem from "../ChatItem";
 
 const Home = () => {
   const [chatsFilter, setChatsFilter] = useState<Chat[]>();

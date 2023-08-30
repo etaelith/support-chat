@@ -1,7 +1,8 @@
 import React from "react";
 import {View, Text, TouchableOpacity, StyleSheet} from "react-native";
+import {useNavigate} from "react-router-native";
 
-import {Chat} from "../../types";
+import {Chat} from "../types";
 interface Item {
   chat: Chat;
 }
@@ -14,9 +15,13 @@ const ChatItem = ({chat}: Item) => {
     hour: "numeric",
     minute: "numeric",
   });
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate(`${chat.id}`);
+  };
 
   return (
-    <TouchableOpacity style={styles.chatItem}>
+    <TouchableOpacity style={styles.chatItem} onPress={() => handleNavigate()}>
       <View style={styles.chatInfo}>
         <Text style={styles.chatName}> {chat.agent}</Text>
         <Text style={styles.lastMessage}>{message}</Text>

@@ -4,66 +4,188 @@
       "id": 1,
       "user": "Alice",
       "agent": "Agent Smith",
-      "lastMessageTimestamp": "2023-08-28T10:15:00",
+      "lastMessageTimestamp": "2023-08-28T14:30:00",
       "messages": [
         {
           "id": 1,
           "role": "user",
           "message": "Hola, tengo un problema con mi pedido.",
-          "timestamp": "2023-08-28T10:00:00"
+          "timestamp": "2023-08-28T14:00:00"
         },
         {
           "id": 2,
           "role": "agent",
           "message": "Hola Alice, ¿en qué puedo ayudarte con tu pedido?",
-          "timestamp": "2023-08-28T10:05:00"
+          "timestamp": "2023-08-28T14:05:00"
         },
         {
           "id": 3,
           "role": "user",
           "message": "Mi pedido aún no ha llegado y la fecha estimada ya pasó.",
-          "timestamp": "2023-08-28T10:10:00"
+          "timestamp": "2023-08-28T14:10:00"
         },
         {
           "id": 4,
           "role": "agent",
           "message": "Lamento la molestia, Alice. Voy a verificar el estado de tu pedido y te informaré enseguida.",
-          "timestamp": "2023-08-28T10:15:00"
+          "timestamp": "2023-08-28T14:15:00"
+        },
+        {
+          "id": 5,
+          "role": "user",
+          "message": "Gracias por tu ayuda. Esperaré tu respuesta.",
+          "timestamp": "2023-08-28T14:20:00"
+        },
+        {
+          "id": 6,
+          "role": "agent",
+          "message": "He revisado la información y parece que hay un retraso en la entrega debido a problemas logísticos. Estamos trabajando para resolverlo lo antes posible.",
+          "timestamp": "2023-08-28T14:25:00"
+        },
+        {
+          "id": 7,
+          "role": "user",
+          "message": "Entiendo, ¿hay alguna nueva fecha estimada de entrega?",
+          "timestamp": "2023-08-28T14:30:00"
+        },
+        {
+          "id": 8,
+          "role": "agent",
+          "message": "Lamentablemente, aún no tenemos una fecha exacta, pero te aseguro que estamos haciendo todo lo posible para agilizar el proceso.",
+          "timestamp": "2023-08-28T14:35:00"
+        },
+        {
+          "id": 9,
+          "role": "user",
+          "message": "Está bien, esperaré. ¡Gracias por mantenerme informada!",
+          "timestamp": "2023-08-28T14:40:00"
         }
       ]
-    },
+    }
+    ,
     {
       "id": 2,
-      "user": "Bob",
-      "agent": "Agent Johnson",
-      "lastMessageTimestamp": "2023-08-28T11:15:00",
+      "user": "Alice",
+      "agent": "Agent Smith",
+      "lastMessageTimestamp": "2023-08-28T17:45:00",
       "messages": [
         {
           "id": 1,
           "role": "user",
-          "message": "Hola, tengo un problema con mi cuenta de facturación.",
-          "timestamp": "2023-08-28T11:00:00"
+          "message": "Hola, tengo un problema con mi pedido.",
+          "timestamp": "2023-08-28T14:00:00"
         },
         {
           "id": 2,
           "role": "agent",
-          "message": "Hola Bob, estaré encantado de ayudarte con tu problema de facturación. Por favor, dime más detalles.",
-          "timestamp": "2023-08-28T11:05:00"
+          "message": "Hola Alice, ¿en qué puedo ayudarte con tu pedido?",
+          "timestamp": "2023-08-28T14:05:00"
         },
         {
           "id": 3,
           "role": "user",
-          "message": "He sido cobrado dos veces por el mismo servicio este mes.",
-          "timestamp": "2023-08-28T11:10:00"
+          "message": "Mi pedido aún no ha llegado y la fecha estimada ya pasó.",
+          "timestamp": "2023-08-28T14:10:00"
         },
         {
           "id": 4,
           "role": "agent",
-          "message": "Lamento la confusión. Voy a investigar la duplicación de cargos en tu cuenta y tomaré medidas para solucionarlo.",
-          "timestamp": "2023-08-28T11:15:00"
+          "message": "Lamento la molestia, Alice. Voy a verificar el estado de tu pedido y te informaré enseguida.",
+          "timestamp": "2023-08-28T14:15:00"
+        },
+        {
+          "id": 5,
+          "role": "user",
+          "message": "Gracias por tu ayuda. Esperaré tu respuesta.",
+          "timestamp": "2023-08-28T14:20:00"
+        },
+        {
+          "id": 6,
+          "role": "agent",
+          "message": "He revisado la información y parece que hay un retraso en la entrega debido a problemas logísticos. Estamos trabajando para resolverlo lo antes posible.",
+          "timestamp": "2023-08-28T14:25:00"
+        },
+        {
+          "id": 7,
+          "role": "user",
+          "message": "Entiendo, ¿hay alguna nueva fecha estimada de entrega?",
+          "timestamp": "2023-08-28T14:30:00"
+        },
+        {
+          "id": 8,
+          "role": "agent",
+          "message": "Lamentablemente, aún no tenemos una fecha exacta, pero te aseguro que estamos haciendo todo lo posible para agilizar el proceso.",
+          "timestamp": "2023-08-28T14:35:00"
+        },
+        {
+          "id": 9,
+          "role": "user",
+          "message": "Está bien, esperaré. ¡Gracias por mantenerme informada!",
+          "timestamp": "2023-08-28T14:40:00"
+        },
+        {
+          "id": 10,
+          "role": "agent",
+          "message": "Aprecio tu paciencia, Alice. Si tienes más preguntas, no dudes en preguntar.",
+          "timestamp": "2023-08-28T15:00:00"
+        },
+        {
+          "id": 11,
+          "role": "user",
+          "message": "Gracias. Además, tengo una pregunta sobre la garantía del producto que compré.",
+          "timestamp": "2023-08-28T15:15:00"
+        },
+        {
+          "id": 12,
+          "role": "agent",
+          "message": "Por supuesto, estaré encantado de responder tus preguntas sobre la garantía. ¿En qué estás interesada?",
+          "timestamp": "2023-08-28T15:20:00"
+        },
+        {
+          "id": 13,
+          "role": "user",
+          "message": "Quisiera saber cuánto tiempo cubre la garantía y qué procedimiento debo seguir en caso de algún problema.",
+          "timestamp": "2023-08-28T15:30:00"
+        },
+        {
+          "id": 14,
+          "role": "agent",
+          "message": "La garantía de tu producto cubre defectos de fabricación y funcionamiento durante un período de un año a partir de la fecha de compra. Si experimentas algún problema, simplemente contáctanos y te guiaremos a través del proceso de reclamo y reparación.",
+          "timestamp": "2023-08-28T15:40:00"
+        },
+        {
+          "id": 15,
+          "role": "user",
+          "message": "¡Gracias por la información! Me siento más tranquila sabiendo que tengo soporte en caso de problemas.",
+          "timestamp": "2023-08-28T16:00:00"
+        },
+        {
+          "id": 16,
+          "role": "agent",
+          "message": "Es un placer poder brindarte ese soporte, Alice. Si necesitas algo más, no dudes en ponerte en contacto con nosotros.",
+          "timestamp": "2023-08-28T16:10:00"
+        },
+        {
+          "id": 17,
+          "role": "user",
+          "message": "Lo aprecio mucho. Gracias nuevamente por tu ayuda.",
+          "timestamp": "2023-08-28T16:20:00"
+        },
+        {
+          "id": 18,
+          "role": "agent",
+          "message": "No hay de qué, Alice. Estamos aquí para ayudarte en cualquier momento. ¡Espero que tengas un gran día!",
+          "timestamp": "2023-08-28T16:30:00"
+        },
+        {
+          "id": 19,
+          "role": "user",
+          "message": "Igualmente, que tengas un maravilloso día. ¡Adiós!",
+          "timestamp": "2023-08-28T16:45:00"
         }
       ]
-    },
+    }
+    ,
     {
       "id": 3,
       "user": "Eva",
