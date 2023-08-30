@@ -1,13 +1,9 @@
 import {ScrollView, Text, StyleSheet, SafeAreaView, View} from "react-native";
-import {useLocation} from "react-router-native";
 
-import chats from "../../utils/chats.json";
 import StyledTextInput from "../StyledTextInput";
+import {FilterJson} from "../../utils/filterChat";
 const Chat = () => {
-  const router = useLocation();
-  const filteredChat = chats.chats.find(
-    (chat) => chat.id.toString() === router.pathname.replace("/", ""),
-  );
+  const chat = FilterJson();
   const formattedTime = (timestamp: string) =>
     new Date(timestamp).toLocaleString("es-ES", {
       hour: "numeric",
@@ -17,7 +13,7 @@ const Chat = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.containerScroll}>
-        {filteredChat?.messages.map((msj) => {
+        {chat?.messages.map((msj) => {
           return (
             <View key={msj.id} style={msj.role === "user" ? styles.user : styles.agent}>
               <Text style={styles.text}>{msj.message}</Text>

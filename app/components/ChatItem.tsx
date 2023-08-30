@@ -1,6 +1,5 @@
-import React from "react";
 import {View, Text, TouchableOpacity, StyleSheet} from "react-native";
-import {useNavigate} from "react-router-native";
+import {useRouter} from "expo-router";
 
 import {Chat} from "../types";
 import {formatTimeAgo} from "../utils/times";
@@ -11,19 +10,21 @@ const ChatItem = ({chat}: Item) => {
   const {message, timestamp} = chat.messages.slice(-1)[0];
   const timeFormat = new Date(timestamp).getTime();
   const formatTime = formatTimeAgo(timeFormat);
-
-  const navigate = useNavigate();
+  const router = useRouter();
   const handleNavigate = () => {
-    navigate(`${chat.id}`);
+    router.push(`/${chat.id}`);
   };
 
   return (
-    <TouchableOpacity style={styles.chatItem} onPress={() => handleNavigate()}>
+    <TouchableOpacity style={styles.chatItem} onPress={handleNavigate}>
       <View style={styles.chatInfo}>
         <Text style={styles.chatName}> {chat.agent}</Text>
         <Text style={styles.lastMessage}>{message}</Text>
       </View>
-      <Text style={styles.timestamp}>{formatTime}</Text>
+      <View style={styles.containerAlert}>
+        <Text style={styles.alert}>1</Text>
+        <Text style={styles.timestamp}>{formatTime}</Text>
+      </View>
     </TouchableOpacity>
   );
 };
@@ -38,6 +39,17 @@ const styles = StyleSheet.create({
     padding: 10,
     borderBottomWidth: 1,
     borderBottomColor: "#ccc",
+  },
+  containerAlert: {
+    alignItems: "center",
+    gap: 8,
+  },
+  alert: {
+    width: 20,
+    height: 20,
+    textAlign: "center",
+    backgroundColor: "rgba(252, 3, 48,0.4)",
+    borderRadius: 50,
   },
   profileImage: {
     width: 50,

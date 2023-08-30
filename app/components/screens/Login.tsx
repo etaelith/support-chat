@@ -9,11 +9,7 @@ const initialValues: FormValues = {
   email: "",
   password: "",
 };
-const styles = StyleSheet.create({
-  form: {
-    margin: 12,
-  },
-});
+
 const FormikInputValue: React.FC<FormikInputValueProps> = ({name, ...props}) => {
   const [field, meta, helpers] = useField(name);
 
@@ -50,5 +46,10 @@ const Login = () => {
     </Formik>
   );
 };
+const styles = StyleSheet.create({
+  form: {
+    margin: 12,
+  },
+});
 
 export default Login;
